@@ -1,0 +1,12 @@
+.App {
+  background: var(--COLOR-GRAY);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .App {
+    flex-direction: column;
+  }
+}

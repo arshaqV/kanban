@@ -1,0 +1,124 @@
+.column {
+    background: var(--COLOR-GRAY-DARK);
+    min-height: 20rem;
+    color: #fff;
+    font-family: Inter;
+    margin: 15px;
+    width: 33%;
+    max-width: 20rem;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.05s linear;
+    border: dashed transparent 2px;
+}
+
+@media only screen and (max-width: 600px) {
+    .column {
+        width: auto;
+        max-width: 100%;
+        margin: 15px;
+        min-height: 25vh;
+    }
+}
+
+.column.drop {
+    border-color: white;
+}
+
+.topWrapper {
+    padding: 0;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column p {
+    padding: 0;
+    margin: 0;
+    font-size: larger;
+}
+
+.addBtn {
+    padding: 0;
+    margin: 0;
+    font-size: x-large;
+    background-color: antiquewhite;
+    color: var(--COLOR-GRAY-DARK);
+    height: 1.5rem;
+    width: 1.5rem;
+    text-align: center;
+    border-radius: 100%;
+    line-height: 1.3rem;
+}
+
+.addBtn:hover {
+    background-color: var(--COLOR-ONGOING);
+    cursor: pointer;
+    scale: 1.1;
+    transition: 0.2s ease-out;
+}
+
+.modal {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.modalContent {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    position: absolute;
+    background: white;
+    padding: 1rem;
+    padding-right: 0.75rem;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalContent input {
+    border: none;
+    border-bottom: solid 1px #666;
+    margin-right: 0.5rem;
+    padding-bottom: 0.25rem;
+}
+
+.modalContent input:focus {
+    outline: none;
+}
+
+.modalContent button {
+    display: flex;
+    color: #333;
+    margin: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+    border: solid 2px #333;
+    border-radius: 100%;
+    font-size: large;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+}
+
+.modalContent button p {
+    margin: 0;
+    padding: 0;
+}
+
+.modalContent button:hover {
+    background-color: #333;
+    color: antiquewhite;
+
+}
